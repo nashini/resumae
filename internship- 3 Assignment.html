@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="styles3.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="myScript.js"></script>
+</head>
+<body>
+    <div class="forms">
+        <form action=" ">
+            <h1> Registration</h1><br>
+          <div class="input-box">
+              <div class="input-field">
+                
+                <input type="text" placeholder="First Name"  class="ShowAlert" onclick="myFun('Please enter your name no spcial characters are allowed') " required>
+                <i class='bx bxs-user'></i>
+              </div>
+              <div class="input-field">
+              <input type="text" placeholder="Last Name"   onclick="myFun1()" required>
+               <i class='bx bxs-user'></i>
+              </div>
+          </div>
+          <div class="input-box">
+            <div class="input-field">
+               <input type="email" placeholder="email"  onclick="myFun2()" required>
+                <i class='bx bx-envelope'></i>
+            </div>
+          <div class="input-field">
+            <input type="password" placeholder="password"  minlength="8"  onclick="myFun3()" required>
+            <i class='bx bx-lock-alt'></i> 
+          </div>
+          </div>
+          <div class="input-box">
+            <div class="input-field">
+              <input type="date" placeholder="DOB"  required>  
+          </div>
+          <div class="input-field">
+            <input type="password" placeholder="confirm-password"  minlength="8"  onclick="myFun4()" required>
+            <i class='bx bxs-lock-alt'></i> 
+          </div>
+        </div>
+          <div class="input-box">
+            <div class="input-field form-control">
+            <select placeholder="Gender" required style="width: 330px; height:50px; background:rgba(255,255 ,255 ,.1);
+            box-shadow: 0 0 10px rgba(0, 0,0,.2);color:rgba(255, 255, 255, 0.932);border: 2px solid(255, 255 ,255 ,.2);">
+              <option style="color: blue;"> Gender</option> 
+                <option style="color: blue;">Female</option>
+                <option style="color: blue;">Male </option>
+                <option style="color: blue";>Other</option>
+            </select>
+            </div>
+            <div class="input-field">
+              <input type="number" placeholder="Whatsapp"  required> 
+            </div>
+          
+          </div>
+        
+          
+          <label>  <input type="checkbox" class="box" required> I hereby declare that all the above information are correct to my knowledge </label><br><br>
+            <button type="submit" class="btn">Register</button>
+        </form>
+
+    </div>
+
+</body>
+</html>
