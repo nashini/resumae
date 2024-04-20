@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("images3.jpeg");
+    background-size:cover;
+}
+.forms{
+   width: 750px;
+   background:rgba(255,255 ,255 ,.1);
+   border: 2px solid(255, 255 ,255 ,.2);
+   border-radius: 30px;
+   box-shadow: 0 0 10px rgba(0, 0,0,.2);
+   color: aliceblue;
+   padding:40px 35px 55px;
+   backdrop-filter:blur(30px);
+
+}
+.forms h1{
+    font-size:36px ;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.forms .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.input-box .input-field{
+    position: relative;
+    width: 48%;
+    height: 50px;
+    
+    margin: 15px 0;
+
+}
+.input-box .input-field input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 3px solid rgba(255,255,255, .2);
+    outline:none;
+    font-size:16px ;
+    color: #fff;
+    border-radius: 6px;
+    padding: 15px 15px 15px 50px;
+}
+.box{
+    padding:0 30px;
+}
+
+.input-box   .input-field input::placeholder{
+    color: #fff;
+    text-align: justify;
+
+}
+.input-box  .input-field i{
+    position:absolute;
+    left:25px;
+    top:50%;
+    transform:translateY(-50%) ;
+    font-size:20px;
+}
+.forms label{
+    display: inline-block;
+    font-size: 14.5px;
+    margin: 10px 0 23px;
+}
+.forms label input{
+    accent-color: #fff;
+    margin-right: 5px;
+}
+.forms .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0,0,1) ;
+    cursor: pointer;
+    color: #333;
+    font-weight: 600;
+
+}
+@media(max-width:576px){
+    .input-box .input-field{
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+#dialogoverlay{
+    display: none;
+    opacity:0;
+    position: fixed;
+    top:0px;
+    background:#fff ;
+    width:100%;
+    z-index: 10;
+}
+#dialogbox{
+    display: none;
+    position: fixed;
+    border-radius: 7px;
+    background:#000 ;
+    width:550px;
+    z-index: 10;
+}
